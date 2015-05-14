@@ -1,0 +1,22 @@
+<div class="area clearfix pr header">
+      <h1 class="logo"><a href="#"><img src="image/logo.png" title="炳恒集团"></a>报表系统</h1>
+</div>
+<div class="container area" style="margin-top:100px;background:rgb(216, 244, 249);height:100%">
+	<div class="row" height="100%">
+	    <div class="col-xs-2 navbar bg-col-50586c">
+	        <div ui-view="booktype" style="">
+	        	类型加载中...
+	        </div>
+	    </div>
+	    <div class="col-md-9">
+	        <div ui-view="bookgrid">
+	        	列表加载中...
+	        </div>
+		    <div>
+		        <div ui-view="chart">
+		        	图表加载中...
+		        </div>
+		    </div>
+	    </div>
+	</div>
+</div>
