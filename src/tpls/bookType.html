@@ -1,0 +1,10 @@
+<div ng-controller='DataNavsCtrl' class="navbarlist">
+    <dl ng-repeat="bar in navData"  ng-click="onBarClick($event,bar,'lee')" class="navbarlistdl">
+        <navbar></navbar>
+        <dd>
+            <ul>
+                <li ng-repeat="nav in bar.second track by $index"><a class="yahei" href="#/{{nav.num}}">{{nav.title}}</a></li>
+            </ul>
+        </dd>
+    </dl>
+</div>
