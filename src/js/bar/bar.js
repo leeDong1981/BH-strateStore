@@ -2,7 +2,7 @@
 * @Author: lee
 * @Date:   2015-05-12 16:52:05
 * @Last Modified by:   anchen
-* @Last Modified time: 2015-05-13 09:48:05
+* @Last Modified time: 2015-05-15 10:52:47
 */
 
 'use strict';
@@ -58,6 +58,7 @@ var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 
     }
     var ctx = document.getElementById("canvas").getContext("2d");
+    ctx.height ='50%';
         window.myBar = new Chart(ctx).Bar(barChartData, {
             responsive : true
         });

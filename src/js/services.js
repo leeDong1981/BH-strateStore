@@ -20,7 +20,8 @@ routerApp.factory('BHserver', ['$rootScope','$http','$stateParams', function ($r
             })
             .success(function(data, status) {
                     datas.gridData = data;
-                     $rootScope.$broadcast( 'datas.update' );
+                    datas.user = {name:'lee',sex:'m'};
+                    $rootScope.$broadcast( 'datas.update' );
             })
         }
     };
