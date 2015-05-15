@@ -1,5 +1,5 @@
 <div ng-controller='DataNavsCtrl' class="navbarlist">
-    <dl ng-repeat="bar in navData" class="navbarlistdl">
+    <dl ng-repeat="bar in navData"  ng-click="onBarClick($event,bar,'lee')" class="navbarlistdl">
         <navbar></navbar>
         <dd>
             <ul>

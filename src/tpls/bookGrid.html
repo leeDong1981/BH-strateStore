@@ -1,30 +1,15 @@
-<div class="mtop_10" ng-controller="BookListCtrl">
-    <div class="row mtop_10">
-    </div><!-- /.row -->
 
-    <div class="row mtop_10">
-      <div class="col-lg-6">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
-          </span>
-        </div><!-- /input-group -->
-      </div><!-- /.col-lg-6 -->
-        <div class="col-md-1">
+<div ng-controller="BookListCtrl">
+    <div class="row">
+        <div class="col-md-12">
         	<a ui-sref="addbook" class="btn btn-primary">添加</a>
         </div>
-        <div class="col-md-3">
-            <a ui-sref="addbook" class="btn btn-primary">导出</a>
-        </div>
-        <div class="col-md-2">
-            <a ui-sref="gotoChart" class="btn btn-primary">查看数据图</a>
-        </div>
     </div>
-    <div class="row mtop_10">
+    <div class="row">
         <div class="col-md-12">
             <div>
-                <div class="gridStyle" ng-grid="gridOptions"></div>
+                <div class="gridStyle" ng-grid="gridOptions">
+                </div>
             </div>
         </div>
     </div>

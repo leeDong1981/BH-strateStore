@@ -50,6 +50,9 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 },
                 'bookgrid@booklist': {
                     templateUrl: 'tpls/bookGrid.html'
+                },
+                'chart@booklist': {
+                    templateUrl: 'tpls/bar.html'
                 }
             }
         })
@@ -60,9 +63,5 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         .state('bookdetail', {
             url: '/bookdetail/:bookId', //路由中传参数的方式
             templateUrl: 'tpls/bookDetail.html'
-        })
-        .state('gotoChart', {
-            url: '/gotoChart/:chartData', 
-            templateUrl: 'tpls/bar.html'
         })
 });
